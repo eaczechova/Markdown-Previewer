@@ -28,16 +28,16 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div className = "app__content">
-          <div id="editor__container">
-            <div id="editor__heading">#Editor</div>
-              <textarea id="editor"onChange={this.handleChange}>{this.state.text}</textarea>
+        <div className="app__content">
+          <div className="editor">
+            <div className="editor__heading">#Editor</div>
+            <textarea className="editor__view" onChange={this.handleChange}>{this.state.text}</textarea>
           </div>
-          <div id="app__division"></div>
-          <div id="preview">
-            <div id="preview__heading">#Preview</div>
-          <div id="preview__view" dangerouslySetInnerHTML = {{__html: marked(this.state.text)}}></div>
-        </div>
+          <div className="app__division"></div>
+          <div className="preview">
+            <div className="preview__heading">#Preview</div>
+            <div className="preview__view" dangerouslySetInnerHTML = {{__html: marked(this.state.text)}}></div>
+          </div>
         </div>
       </div>
     );
