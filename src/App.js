@@ -3,7 +3,7 @@ import './App.css';
 
 const marked = require("marked");
 
-let placholderMessage = `
+const placholderMessage = `
 # This is React Markdown Previewer Project
 ## This is a sub-heading...
 ### And here's some other cool stuff:
@@ -13,14 +13,16 @@ Heres some code
 class App extends Component {
   constructor(props) {
     super(props);
+    this.handleChange = this.handleChange.bind(this);
     this.state = {
       text: placholderMessage
     };
-    this.onChange = this.onChange.bind(this);
   }
 
-  onChange (event) {
-    this.setState({text: event.target.value});
+  handleChange (event) {
+    this.setState({
+      text: event.target.value,
+    });
   }
 
   render() {
@@ -29,7 +31,7 @@ class App extends Component {
         <div className = "app__content">
           <div id="editor__container">
             <div id="editor__heading">#Editor</div>
-            <textarea id="editor" value={this.state.text} onChange={this.onChange}></textarea>
+              <textarea id="editor"onChange={this.handleChange}>{this.state.text}</textarea>
           </div>
           <div id="app__division"></div>
           <div id="preview">
