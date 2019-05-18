@@ -1,4 +1,4 @@
-#Markdown Previewer
+# Markdown Previewer
 
 A simple GitHub flavored markdown previewer using [Marked] (https://cdnjs.com/libraries/marked) library.
 
