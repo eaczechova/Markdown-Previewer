@@ -2,6 +2,8 @@
 
 A simple GitHub flavored markdown previewer using [Marked](https://cdnjs.com/libraries/marked) library.
 
+Here you can see the [preview](https://eaczechova.github.io/Markdown-Previewer/)
+
 ## Installation
 
 To get started right away:
