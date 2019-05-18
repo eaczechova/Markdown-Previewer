@@ -1,7 +1,19 @@
+#Markdown Previewer
+
+A simple GitHub flavored markdown previewer using [Marked] (https://cdnjs.com/libraries/marked) library.
+
+## Installation
+
+To get started right away:
+
+1. install all project dependencies with ``` npm install ```
+2. start the development server with ``` npm start ```
+3. run ``` http://localhost:3000/ ``` to open the app
+
 ## User Stories
 
-User Story: I can type GitHub-styled Markdown into the text area
+User can type GitHub-styled Markdown into the text area.
 
-User Story: I can see the preview of the output in the markdown that is updated as the text is typed
+User can see the preview of the output in the markdown that is updated as the text is typed.
 
-Project link: (https://www.freecodecamp.com/challenges/build-a-markdown-previewer)
+For more project details visit this [link] (https://www.freecodecamp.com/challenges/build-a-markdown-previewer) .
